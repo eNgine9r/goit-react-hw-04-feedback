@@ -33,12 +33,12 @@ const countTotalFeedback = () => {
   };
 
   const countPositiveFeedbackPercentage = () => {
-    const total = this.countTotalFeedback();
-    const positive = this.state.good;
+    const total = countTotalFeedback();
+    const positive = good;
     return total > 0 ? Math.round((positive / total) * 100) : 0;
   };
 
-    const total = this.countTotalFeedback();
+    const total = countTotalFeedback();
     const positivePercentage = countPositiveFeedbackPercentage();
     
     return (
@@ -46,7 +46,7 @@ const countTotalFeedback = () => {
         <Section title="Please leave feedback">
           <FeedbackOptions
             onLeaveFeedback={onGetFeedback}
-            names={['good', 'neutral', 'bad']}
+            options={['good', 'neutral', 'bad']}
           />
         </Section>
         <Section title="Statistics">
