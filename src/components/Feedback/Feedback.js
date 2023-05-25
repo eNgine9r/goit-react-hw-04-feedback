@@ -46,7 +46,7 @@ const countTotalFeedback = () => {
         <Section title="Please leave feedback">
           <FeedbackOptions
             onLeaveFeedback={onGetFeedback}
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys({good, neutral, bad})}
           />
         </Section>
         <Section title="Statistics">
