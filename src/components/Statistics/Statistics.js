@@ -19,6 +19,9 @@ const Statistics = ({ options, total, positivePercentage }) => {
         <li>
           <p>Total: {total}</p>
         </li>
+        <li>
+        <p>Positive feedback: {positivePercentage} %</p>
+        </li>
       </ul>
     </>
   );
