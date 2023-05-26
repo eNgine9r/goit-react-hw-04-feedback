@@ -48,6 +48,7 @@ const countTotalFeedback = () => {
             onLeaveFeedback={onGetFeedback}
             options={Object.keys({good, neutral, bad})}
           />
+          <p>Positive feedback: {positivePercentage} %</p>
         </Section>
         <Section title="Statistics">
           {total ? (
