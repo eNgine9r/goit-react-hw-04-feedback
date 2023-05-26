@@ -55,7 +55,6 @@ const countTotalFeedback = () => {
             <Statistics
               options={{ good, neutral, bad }}
               total={total}
-              positivePercentage={positivePercentage}
             />
           ) : (
             <Notification message="There is no feedback" />)}
